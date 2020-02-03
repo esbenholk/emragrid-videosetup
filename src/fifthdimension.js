@@ -113,7 +113,7 @@ export default class FifthDimension extends Component {
     );
     camera.position.y = 40;
     scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0x000000, 90, 200);
+    // scene.fog = new THREE.Fog(0xffffff, 60, 200);
     var light = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75);
     light.position.set(0.5, 1, 0.75);
     scene.add(light);
@@ -144,8 +144,8 @@ export default class FifthDimension extends Component {
         // draw gradient
         context.rect(0, 0, size, size);
         var gradient = context.createLinearGradient(0, 0, size, size);
-        gradient.addColorStop(0, "blue"); // light blue
-        gradient.addColorStop(0.6, "black"); // dark blue
+        gradient.addColorStop(0, "white"); // light blue
+        gradient.addColorStop(0.6, "#89fffb"); // dark blue
         // gradient.addColorStop(0.8, "red"); // dark blue
 
         context.fillStyle = gradient;
@@ -166,7 +166,7 @@ export default class FifthDimension extends Component {
       });
       var box = new THREE.Mesh(boxGeometry, boxMaterial);
       box.position.x = Math.floor(Math.random() * 20 - 10) * 40;
-      box.position.y = Math.floor(Math.random() * -200) * 10;
+      box.position.y = Math.floor(Math.random() * 900) * 10;
       box.position.z = Math.floor(Math.random() * 20 - 10) * 40;
       boxes.push(box);
       scene.add(box);
@@ -233,7 +233,7 @@ export default class FifthDimension extends Component {
     for (var i = 0; i < boxes.length; i++) {
       // boxes[i].rotation.y += 0.005;
       boxes[i].rotation.z += 0.002;
-      boxes[i].position.y += 0.5;
+      boxes[i].position.y += -0.5;
       sphere.rotation.y += 0.005;
     }
 

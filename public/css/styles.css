@@ -13,7 +13,14 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  background: linear-gradient(180deg, red, #ff00ff, #3300ff, #450082, red);
+  background: linear-gradient(
+    180deg,
+    #89ffd2,
+    #e9ff89,
+    #89fffb,
+    white,
+    #89ffd2
+  );
   background-size: 1000% 1000%;
   animation: gradientAnimator 40s ease infinite;
   width: 100%;
