@@ -220,7 +220,7 @@ let images = [
   "https://houseofkillingwebsite.s3.amazonaws.com/Screen+Shot+2020-01-31+at+17.04.32.png",
   "https://houseofkillingwebsite.s3.amazonaws.com/Screen+Shot+2020-01-31+at+17.04.37.png",
   "https://houseofkillingwebsite.s3.amazonaws.com/Screen+Shot+2020-01-31+at+17.04.45.png",
-  "https://houseofkillingwebsite.s3.amazonaws.com/Screen+Shot+2020-01-31+at+17.04.47.png"
+  "bulldozer.png"
 ];
 export default class App extends Component {
   constructor(props) {

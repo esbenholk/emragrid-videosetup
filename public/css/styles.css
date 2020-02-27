@@ -9,7 +9,15 @@
     background-position: 34% 0%;
   }
 }
-
+video {
+  /* display: none; */
+  width: 2px;
+  height: auto;
+}
+audio {
+  width: 2px;
+  height: auto;
+}
 body {
   box-sizing: border-box;
   margin: 0;
